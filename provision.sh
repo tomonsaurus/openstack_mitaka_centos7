@@ -44,12 +44,12 @@ sudo systemctl start network
 #有効化する
 
 
-PasswordAuthentication yes
 
 
 sudo sed -i "s/^PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
 
 sudo systemctl restart sshd
+sudo systemctl restart network
 
 
 ################################################
